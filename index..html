@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day7 learning</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: pink;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+    color: white;
+}
+
+.logo{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    color: blanchedalmond;
+}
+
+.nav-links li{
+    margin-left: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: yellow;
+}
+
+/* Responsive Design */
+
+@media(max-width: 768px){
+    .nav-links{
+        flex-direction: column;
+        background-color: #444;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        display: none;
+    }
+
+    .nav-links li{
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+a{
+    color: white;
+    font-size: 15px;
+    text-decoration:none;
+    animation-name: a;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes a{
+    from{
+        transform: rotate('0degree');
+        
+    }
+    to{
+        transform: rotate('360deg');
+
+    }
+}
+    
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div id="logo">designx</div>
+    
+        <a href="#">Home</a>
+        <a href="#">About</a>
+         <a href="#">service</a>
+        <a href="#">Contact</a>
+    
+     </nav>
+<body>
+</body>
+</html>
